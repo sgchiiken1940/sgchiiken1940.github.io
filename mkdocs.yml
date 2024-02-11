@@ -1,0 +1,44 @@
+site_name: 地域研究部公式ホームページ
+# Copyright
+copyright: 'Copyright © 2024 - 地域研究部'
+navi:
+     - ホーム: index.md
+     - 地域研究部とは: about.md
+     - お知らせ: announce.md
+     - 問い合わせ: contact.md
+     - 活動ギャラリー: gallery.md
+theme:
+    name: material
+    language: ja
+    font: # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/
+      text: Noto Sans JP
+      code: JetBrains Mono
+    favicon: https://assets.st-note.com/production/uploads/images/46152479/profile_9e97add344f2fe5c7399af0180a66182.jpeg?width=2000&height=2000&fit=bounds&format=jpg&quality=85
+    logo: https://assets.st-note.com/production/uploads/images/46152479/profile_9e97add344f2fe5c7399af0180a66182.jpeg?width=2000&height=2000&fit=bounds&format=jpg&quality=85
+    palette:
+    - primary: light green
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: システム設定のテーマに切り替え
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: ライトモードに切り替え
+    - media: "(prefers-color-scheme: auto)"
+      scheme: auto
+      toggle:
+        icon: material/theme-light-dark
+        name: ダークモードに切り替え
+markdown_extensions:
+  - admonition
+  - attr_list
+plugins:
+  - blog:
+      post_url_format: "{date}/{file}"
+  - search:
+      lang:
+        - ja
+        - en
