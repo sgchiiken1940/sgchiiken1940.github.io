@@ -42,3 +42,9 @@ plugins:
       lang:
         - ja
         - en
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sgchiiken1940
+      name: sgchiiken GitHub
+  generator: false
