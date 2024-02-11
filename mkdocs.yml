@@ -48,3 +48,8 @@ extra:
       link: https://github.com/sgchiiken1940
       name: sgchiiken GitHub
   generator: false
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+  - javascripts/mode-toggle.js
